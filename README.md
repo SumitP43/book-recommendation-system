@@ -1,65 +1,63 @@
-# 📚 Book Recommendation System
+# book-recommendation-system
+The Book Recommendation System is a machine learning–based web application that suggests books to users based on similarity between books. It helps users discover relevant books efficiently by analyzing book features and user preferences.  This project uses content-based filtering and Cosine Similarity to recommend books similar to the one selected
 
-The **Book Recommendation System** is a machine learning–based web application that suggests books to users based on the similarity between books. It helps users discover relevant books efficiently by analyzing book features and user preferences.
-
-This project uses **content-based filtering** and **Cosine Similarity** to recommend books similar to the one selected by the user.
-
----
-
-## 📝 Abstract
-
+# Abstract
 The Book Recommendation System is a machine learning–driven web application designed to provide personalized book suggestions based on content similarity. The system analyzes book metadata and recommends similar books using mathematical similarity measures, helping users discover relevant reading material efficiently.
 
-The application is implemented using **Flask** for the backend and **Scikit-learn** for building the recommendation logic.
+---
+
+## Objective
+The primary objective of this project is to design and implement an intelligent recommendation system that minimizes user effort in searching for suitable books while demonstrating the practical application of machine learning algorithms in a real-world web environment.
 
 ---
 
-## 🎯 Objective
-
-The primary objective of this project is to design and implement an intelligent recommendation system that reduces the effort required by users to find suitable books, while demonstrating the real-world application of machine learning algorithms in a web-based environment.
-
----
-
-## 🚀 Features
-
-- Recommends books based on a user-selected book  
-- Uses **K-Nearest Neighbors (KNN)** with **Cosine Similarity**  
-- Pre-trained machine learning model for fast recommendations  
-- Simple and user-friendly web interface  
-- Efficient handling of large datasets  
+## Technologies Used
+- Python  
+- Flask (Backend Framework)  
+- Scikit-learn (Machine Learning Library)  
+- Pandas & NumPy (Data Processing)  
+- Google Colab (Model Training & Experimentation)
 
 ---
 
-## 🧠 Technologies Used
-
-- **Python**
-- **Flask** (Backend Framework)
-- **Scikit-learn** (Machine Learning Library)
-- **Pandas & NumPy** (Data Processing)
-- **HTML / CSS** (Frontend)
-- **Pickle** (Model Storage)
-- **Google Colab** (Model Training & Experimentation)
+## Methodology
+This system implements a **content-based recommendation approach**. Book features such as title, author, genre, and ratings are vectorized, and **Cosine Similarity** is applied to measure the similarity between books. Based on these similarity scores, the most relevant books are recommended to the user.
 
 ---
 
-## ⚙️ Methodology
-
-This project follows a **content-based recommendation approach**. Book attributes such as title, author, genre, and ratings are processed and transformed into numerical vectors.  
-**Cosine Similarity** is then used to compute similarity scores between books, and the most similar books are recommended to the user.
-
----
-
-## 📌 System Highlights
-
-- Accurate and efficient book recommendations  
-- Lightweight and scalable Flask backend  
-- Modular project structure  
-- Easy to extend with new datasets or algorithms  
+## System Features
+- Accurate book recommendations using machine learning  
+- Efficient and lightweight Flask backend  
+- User-friendly interface  
+- Scalable and modular architecture  
 
 ---
 
-## 📂 Project Structure
-
-
----
-
+## Project Structure
+Book-Recommendation-System/
+│
+├── app.py
+│   └── Main Flask application file responsible for routing,
+│       handling user requests, and generating recommendations
+│
+├── requirements.txt
+│   └── Lists all Python dependencies required to run the project
+│
+├── data/
+│   └── books.csv
+│       └── Dataset containing book metadata used for generating recommendations
+│
+├── templates/
+│   └── index.html
+│       └── Frontend HTML template for user interaction
+│
+├── static/
+│   └── style.css
+│       └── CSS file for styling the web interface
+│
+├── model/
+│   └── recommendation_model.pkl
+│       └── Serialized machine learning model (if applicable)
+│
+└── README.md
+    └── Project documentation
