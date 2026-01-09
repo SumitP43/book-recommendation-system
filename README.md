@@ -34,3 +34,30 @@ This system implements a **content-based recommendation approach**. Book feature
 ---
 
 ## Project Structure
+Book-Recommendation-System/
+│
+├── app.py
+│   └── Main Flask application file responsible for routing,
+│       handling user requests, and generating recommendations
+│
+├── requirements.txt
+│   └── Lists all Python dependencies required to run the project
+│
+├── data/
+│   └── books.csv
+│       └── Dataset containing book metadata used for generating recommendations
+│
+├── templates/
+│   └── index.html
+│       └── Frontend HTML template for user interaction
+│
+├── static/
+│   └── style.css
+│       └── CSS file for styling the web interface
+│
+├── model/
+│   └── recommendation_model.pkl
+│       └── Serialized machine learning model (if applicable)
+│
+└── README.md
+    └── Project documentation
